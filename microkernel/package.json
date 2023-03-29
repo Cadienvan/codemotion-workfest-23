@@ -1,0 +1,17 @@
+{
+  "name": "microkernel",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "benchmark-users": "npx autocannon -c 100 -d 10 'http://localhost:3000/users'",
+    "benchmark-users-async": "npx autocannon -c 100 -d 10 'http://localhost:3000/users-with-async-batching'"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@jointly/cache-candidate": "^1.5.7",
+    "fastify": "^4.15.0"
+  }
+}
